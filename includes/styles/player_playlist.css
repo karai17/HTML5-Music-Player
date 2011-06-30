@@ -1,0 +1,72 @@
+table input[type=checkbox], table button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 13px;
+	height: 13px;
+	position: relative;
+	top: 1px;
+}
+
+table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+thead {
+	display: block;
+	width: 100%;
+}
+
+tbody {
+	display: block;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+tr {
+	padding: 0;
+	margin: 0;
+}
+
+th {
+	background: #383635;
+	border-top: 1px solid #4d4b48;
+	border-left: 1px solid #4d4b48;
+	border-bottom: 1px solid #171614;
+	border-right: 1px solid #171614;
+	padding: 6px 7px;
+	margin: 0;
+}
+
+td {
+	border-left: 1px solid #4d4b48;
+	border-bottom: 1px solid #4d4b48;
+	padding: 7px 8px 6px 7px;
+	margin: 0;
+}
+
+#delete button {background: url('../images/d1.png') no-repeat;}
+#delete button:hover {background: url('../images/d2.png') no-repeat;}
+.delete button {background: url('../images/d3.png') no-repeat;}
+.delete button:hover {background: url('../images/d1.png') no-repeat;}
+
+#play button {background: url('../images/p1.png') no-repeat;}
+.play button {background: url('../images/p1.png') no-repeat;}
+.play button:hover {background: url('../images/p2.png') no-repeat;}
+.playing .play button {background: url('../images/p2.png') no-repeat;}
+
+#check, #delete, #play, .check, .delete, .play{
+	text-align: center;
+}
+
+#play button {
+	cursor: default;
+}
+
+.playing {
+	background: #383635;
+	color: #7baed5;
+	font-style: italic;
+	font-weight: 700;
+}

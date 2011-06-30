@@ -1,0 +1,93 @@
+#controller {
+	background: #383635;
+	width: 100%;
+	padding: 10px;
+}
+
+#controller button {
+	border-top: 1px solid #4d4b48;
+	border-left: 1px solid #4d4b48;
+	border-bottom: 1px solid #171614;
+	border-right: 1px solid #171614;
+	border-radius: 24px;
+	-o-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	width: 48px;
+	height: 48px;
+}
+
+#controller button:hover {
+	background-color: #434140 !important;
+}
+
+#prev {background: url('../images/back.png') no-repeat center center;}
+#rw {background: url('../images/rw.png') no-repeat center center;}
+#playToggle {background: url('../images/play.png') no-repeat center center;}
+#stop {background: url('../images/stop.png') no-repeat center center;}
+#ff {background: url('../images/ff.png') no-repeat center center;}
+#next {background: url('../images/next.png') no-repeat center center;}
+#shuffle {background: url('../images/shuffle.png') no-repeat center center;}
+
+#slider {
+	position: absolute;
+	height: 48px;
+}
+
+#handle {
+	background: url('../images/handle.png') no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 18px;
+	height: 18px;
+	margin-left: -9px;
+}
+
+#timer {
+	cursor: pointer;
+	font-size: 160%;
+	font-weight: 700;
+	position: absolute;
+	right: 0px;
+	padding: 0 20px;
+	width: 70px;
+	height: 48px;
+	line-height: 48px;
+	text-align: right;
+}
+
+
+.slider {
+	position: absolute;
+	top: 18px;
+	background: #e6e6e6;
+	border: 1px solid black;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 100%;
+	height: 10px;
+}
+
+.pause {background: url('../images/pause.png') no-repeat center center !important;}
+.bprev {background: url('../images/bback.png') no-repeat center center !important;}
+.brw {background: url('../images/brw.png') no-repeat center center !important;}
+.bplay {background: url('../images/bplay.png') no-repeat center center !important;}
+.bstop {background: url('../images/bstop.png') no-repeat center center !important;}
+.bff {background: url('../images/bff.png') no-repeat center center !important;}
+.bnext {background: url('../images/bnext.png') no-repeat center center !important;}
+.bshuffle {background: url('../images/bshuffle.png') no-repeat center center !important;}
+.bpause {background: url('../images/bpause.png') no-repeat center center !important;}
+.bhandle {background: url('../images/bhandle.png') no-repeat center center !important;}
+.bslider {background: #7baed5 !important;}
+.btimer{color: #7baed5 !important;}
+
+.click {
+	border-top: 1px solid #171614;
+	border-left: 1px solid #171614;
+	border-bottom: 1px solid #4d4b48;
+	border-right: 1px solid #4d4b48;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Local Music Player</title>
+		<link rel="stylesheet" type="text/css" href="includes/styles/player_misc.css" />
+		<link rel="stylesheet" type="text/css" href="includes/styles/player_playlist.css" />
+		<link rel="stylesheet" type="text/css" href="includes/styles/player_controller.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+		<script src="includes/scripts/getScrollbarWidth.js"></script>
+		<script src="includes/scripts/mousehold.js"></script>
+		<script src="includes/scripts/id3-minimized.js"></script>
+		<script src="includes/scripts/player.js"></script>
+		<script src="includes/scripts/ga.js"></script>
+	</head>
+	<body class="drop">
+		<div id="capsule">
+			<div id="controller">
+				<span id="buttons">
+					<button id="prev"></button>
+					<button id="rw"></button>
+					<button id="playToggle"></button>
+					<button id="stop"></button>
+					<button id="ff"></button>
+					<button id="next"></button>
+					<button id="shuffle"></button>
+				</span>
+				<span id="slider">
+					<span class="slider"></span>
+					<span id="handle" class="ui-slider-handle"></span>
+				</span>
+				<span id="timer">0:00</span>
+				<audio id="audio"></audio>
+			</div>
+			<table id="songList">
+				<thead>
+					<tr>
+						<th id="check"><input type="checkbox" title="Select All" /></th>
+						<th id="delete"><button title="Delete Selected"></button></th>
+						<th id="play"><button></button></th>
+						<th id="artist">Artist</th>
+						<th id="title">Title</th>
+						<th id="album">Album</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+			<div id="fade"></div>
+			<div id="drop">
+				<h2>Select Your Music</h2>
+				<p>To select your music, drop your files anywhere on this page or click the button below to navigate to your files.<p>
+				<div><span class="fileInput">Click to select tracks</span></div>
+			</div>
+			<input name="files[]" type="file" multiple />
+		</div>
+	</body>
+</html>
