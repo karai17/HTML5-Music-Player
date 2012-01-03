@@ -197,7 +197,7 @@ function loadSong(file){
 		var tags	= ID3.getAllTags(file.name);
 		
 		//-- Create DOM objects with file data --
-		var tr		= $('<tr></tr>').data('file', file);
+		var tr		= $('<tr class="ui-state-default"></tr>').data('file', file);
 		var check	= $('<td class="check"><input type="checkbox" /></td>');
 		var del		= $('<td class="delete"><button title="Delete From List"></button></td>');
 		var play	= $('<td class="play"><button></button></td>');
@@ -539,5 +539,15 @@ $(document).ready(function(){
 	//== Play song from list ==
 	$('.play button').live('click', function(){
 		playSong($(this).parent().parent());
+	});
+	
+	//== Drag and Drop Sorting ==
+	$(function(){
+		$('#songList tbody').sortable({
+			placeholder: "ui-state-highlight",
+			forcePlaceholderSize: true,
+			'start': function (event, ui) {ui.placeholder.html('<td colspan="6">&nbsp;</td>');}
+		});
+		$('#songList tbody').disableSelection();
 	});
 });

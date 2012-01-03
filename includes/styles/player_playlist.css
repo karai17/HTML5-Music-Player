@@ -25,6 +25,7 @@ tbody {
 }
 
 tr {
+	background: #171614;
 	padding: 0;
 	margin: 0;
 }
@@ -69,4 +70,10 @@ td {
 	color: #7baed5;
 	font-style: italic;
 	font-weight: 700;
+}
+
+.ui-state-highlight{
+	background: #7baed5;
+	height: 10pt;
+	line-height: 10pt;
 }
