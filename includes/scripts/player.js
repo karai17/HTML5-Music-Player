@@ -550,4 +550,32 @@ $(document).ready(function(){
 		});
 		$('#songList tbody').disableSelection();
 	});
+	
+	//== Link slider to volume ==
+	$('#volumeSlider .ui-slider').slider({
+		value		: 1,
+		step		: 0.01,
+		orientation	: "vertical",
+		//range		: "min",
+		max			: 1,
+		animate		: true,          
+		slide		: function(){             
+			manualSeek = true;
+			//$audio.volume = ui.value;
+			//volume display = ui.value * 100;
+		},
+		stop		: function(e,ui){
+			manualSeek = false;
+			$audio.volume = ui.value;
+		}
+	});
+	
+	//== Display volume panel ==
+	$('#volume').click(function(){
+		$('#volumeSlider').animate({width : 'toggle'}, 'fast');
+	});
+	
+	$('#volumeSlider').mouseleave(function(){
+		$('#volumeSlider').animate({width : 'toggle'}, 'fast');
+	});
 });

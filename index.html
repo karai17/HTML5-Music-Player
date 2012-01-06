@@ -6,8 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="includes/styles/player_misc.css" />
 		<link rel="stylesheet" type="text/css" href="includes/styles/player_playlist.css" />
 		<link rel="stylesheet" type="text/css" href="includes/styles/player_controller.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 		<script src="includes/scripts/getScrollbarWidth.js"></script>
 		<script src="includes/scripts/mousehold.js"></script>
 		<script src="includes/scripts/id3-minimized.js"></script>
@@ -17,13 +17,19 @@
 		<div id="capsule">
 			<div id="controller">
 				<span id="buttons">
-					<button id="prev"></button>
-					<button id="rw"></button>
-					<button id="playToggle"></button>
-					<button id="stop"></button>
-					<button id="ff"></button>
-					<button id="next"></button>
-					<button id="shuffle"></button>
+					<button id="prev"><div></div></button>
+					<button id="rw"><div></div></button>
+					<button id="playToggle"><div></div></button>
+					<button id="stop"><div></div></button>
+					<button id="ff"><div></div></button>
+					<button id="next"><div></div></button>
+					<button id="shuffle"><div></div></button>
+					<button id="volume"><div></div></button>
+					<div id="volumeSlider">
+						<span class="ui-slider">
+							<span class="ui-slider-handle"></span>
+						</span>
+					</div>
 				</span>
 				<span id="slider">
 					<span class="slider"></span>

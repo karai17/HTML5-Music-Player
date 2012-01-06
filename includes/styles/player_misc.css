@@ -43,6 +43,7 @@ input[type=file] {
 	padding: 20px;
 	width: 364px;
 	height: 256px;
+	z-index: 9003;
 }
 
 #drop p {
@@ -64,6 +65,7 @@ input[type=file] {
 	top: 0px;
 	left: 0px;
 	opacity: 0.5;
+	z-index: 9002;
 }
 
 .fileInput {
