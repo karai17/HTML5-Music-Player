@@ -24,13 +24,17 @@ tbody {
 	overflow-y: scroll;
 }
 
+tfoot td div {
+	text-align: center;
+}
+
 tr {
 	background: #171614;
 	padding: 0;
 	margin: 0;
 }
 
-th {
+th, tfoot td {
 	background: #383635;
 	border-top: 1px solid #4d4b48;
 	border-left: 1px solid #4d4b48;
@@ -38,6 +42,7 @@ th {
 	border-right: 1px solid #171614;
 	padding: 6px 7px;
 	margin: 0;
+	height: 18px;
 }
 
 td {
@@ -45,6 +50,23 @@ td {
 	border-bottom: 1px solid #4d4b48;
 	padding: 7px 8px 6px 7px;
 	margin: 0;
+}
+
+td .fileInput {
+	background: #434140;
+	border: 1px solid #4d4b48;
+	border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+	-moz-box-shadow: 0px 0px 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
+	padding: 3px 5px;
+	cursor: pointer;
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
 }
 
 #delete button {background: url('../images/d1.png') no-repeat;}

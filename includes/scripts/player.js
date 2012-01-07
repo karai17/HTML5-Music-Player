@@ -137,9 +137,10 @@ function setTableHeight(){
 	var wheight	= $(window).height();
 	var cheight	= $('#controller').innerHeight();
 	var hheight	= $('thead').height();
+	var fheight	= $('tfoot').height();
 	
 	//-- Calculate new height --
-	var nheight	= wheight - cheight - hheight;
+	var nheight	= wheight - cheight - hheight - fheight;
 	
 	//-- Set new height --
 	$('tbody').css('height', nheight);
@@ -578,4 +579,7 @@ $(document).ready(function(){
 	$('#volumeSlider').mouseleave(function(){
 		$('#volumeSlider').animate({width : 'toggle'}, 'fast');
 	});
+	
+	//== Sortable table ==
+	
 });
